@@ -22,7 +22,6 @@
     "server-side",
     "boilerplate"
   ],
-  "author": "Ilan Cohen <ilanco@gmail.com>",
   "scripts": {
     "start": "cross-env NODE_ENV=production node server",
     "dev": "rimraf ./dist && cross-env NODE_ENV=development nodemon -L server.js",
