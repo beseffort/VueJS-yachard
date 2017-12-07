@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# {{assetCacheHash}}
+
+CACHE:
+/
+{{cachedFiles}}
+
+NETWORK:
+*
+
+FALLBACK:
+# Offline site here
+/ /index.html

@@ -1,0 +1,88 @@
+/*  UTILITY CLASSES ======================================================================= */
+
+/* floats */
+
+.pull-left {float:left;}
+.pull-right {float:right;}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* text */
+
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+
+.italic {font-style: italic;}
+.to-upper {text-transform: uppercase;}
+
+/* HR */
+hr {
+	margin-bottom: 15px;
+	margin-top: 0;
+	border: 0;
+  height: 0;
+  border-top: 1px solid #dbdee5;
+}
+
+/* wp captions and img helpers */
+
+.wp-caption {
+	background-clip: padding-box;
+	font-size: 14px;
+	font-weight: normal;
+	>a {
+		display: block;
+		overflow: hidden;
+	}
+	img {
+		min-width: 100%;
+	}
+	.wp-caption-text {
+		margin-bottom:0;
+		color: #8a8a8a;
+		font-style: italic;
+	}
+}
+.alignleft{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.alignright{
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+/* buttons */
+.btn {
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding:20px 40px;
+  background: #ee6f1f;
+  display: inline-block;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #d86116;
+  }
+}
+.btn--blue {
+  background:#214ba7;
+
+  &:hover {
+    background:#143b90;
+  }
+}
+
+/* Responsive helpers */
+
+/* NEED TO ADD HIDDEN CLASSES FOR DIFFERENT SCREEN SIZE */

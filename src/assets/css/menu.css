@@ -1,0 +1,136 @@
+/*  MENU STYLES ======================================================================= */
+
+/* collapsible menu */
+.responsive-nav {
+    position: relative;
+    z-index: 1;
+    color: white;
+    float:right;
+
+    @media only screen and (min-width: 480px) {
+      margin-top:10px;
+    }
+}
+
+.menu-hook:after {
+  content: "menu ☰";
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 9px 15px;
+  border: 2px solid white;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  color: white;
+
+  @media only screen and (min-width: 480px) {
+    padding: 9px 25px;
+  }
+}
+.site-nav__main {
+    position: fixed;
+    top: 0;
+    right: -410px;
+    height: 100%;
+    width: 400px;
+    background: #252e43;
+    transition: all .3s ease-in-out;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 0px -5px 10px #1e222d;
+}
+.site-nav__main.show {
+  right: 0;
+}
+.site-nav__main .menu-close {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-size: 20px;
+}
+
+/* menu ul element */
+.menu-list {
+    margin-top: 75px;
+}
+.menu-list > li{
+  display: block;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid #293756;
+}
+
+
+/* main nav */
+.nav__signin {
+    float: left;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 11px;
+    margin-right: 20px;
+    display: none;
+
+    @media only screen and (min-width: 720px) {
+      display: inline-block;
+    }
+}
+.nav__donate {
+    background: #214ba7;
+    padding: 13px 25px;
+    margin-left: 15px;
+    font-weight: 700;
+    display: none;
+
+    @media only screen and (min-width: 720px) {
+      display: inline-block;
+    }
+
+    &:hover {
+      background: #143b90;
+    }
+}
+.site-nav__main a,
+.site-nav__main span {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    padding:10px 15px;
+    cursor: pointer;
+}
+.site-nav__main .active > a {
+  color: #ee6f1f;
+}
+
+
+/* dropdown */
+.menu__dropdown {
+	position: relative;
+}
+li.menu__dropdown:after {
+  content:"v";
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #293756;
+}
+.site-nav__main .menu__dropdown-menu {
+	  padding: 5px 20px 5px 20px;
+    display: none;
+
+    &.open {
+      display:block;
+    }
+}
+.menu__dropdown-menu a {
+  font-size: 14px;
+  font-weight: normal;
+}

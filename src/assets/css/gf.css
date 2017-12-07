@@ -1,0 +1,95 @@
+/* GF additional styles */
+.gform_button {
+  display: inline-block;
+  color: #fff !important;
+  width: auto !important;
+  background-color: #214ba7;
+ }
+ .validation_error h4 {
+   margin-top: 0;
+   color: inherit; }
+
+ .validation_error .alert-link {
+   font-weight: bold; }
+
+ .validation_error>p, .validation_error>ul {
+   margin-bottom: 0; }
+
+ .validation_error>p+p {
+   margin-top: 5px; }
+
+ .validation_error hr {
+   border-top-color: #e6c1c7; }
+
+ .validation_error .alert-link {
+   color: #953b39; }
+
+ #gforms_confirmation_message {
+   padding: 15px;
+   margin-bottom: 20px;
+   border: 1px solid transparent;
+   border-radius: 4px; }
+
+ #gforms_confirmation_message h4 {
+   margin-top: 0;
+   color: inherit; }
+
+ #gforms_confirmation_message .alert-link {
+   font-weight: bold; }
+
+ #gforms_confirmation_message>p, #gforms_confirmation_message>ul {
+   margin-bottom: 0; }
+
+ #gforms_confirmation_message>p+p {
+   margin-top: 5px; }
+
+/* fixes to the ou checkout plugin */
+.ginput_card_security_code {
+	display: inline-block !important;
+}
+.ginput_container_creditcard {
+    padding: 20px;
+    background: #efefef;
+    border-radius: 4px;
+}
+.name_prefix.name_prefix_select{
+	display: block !important;
+	select {
+		    display: block !important;
+			width: 50% !important;
+	}
+}
+
+.gform_wrapper .donate-gf-styles ul.gfield_radio li {
+    padding: 10px 10px !important;
+    background: #efefef;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.gform_wrapper .gf__ul-col--3 ul{
+	@media (min-width: 720px) {
+		    -webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+	}
+	li {
+		    display: inline-block;
+			width: 100%;
+	}
+}
+.gform_wrapper .gf__ul-col--2 ul{
+	@media (min-width: 720px) {
+		    -webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+	}
+	li {
+		    display: inline-block;
+			width: 100%;
+	}
+}
+
+// Fix Other field spacing when in a radio list
+.gform_wrapper li.gfield ul.gfield_radio li input[type=radio]+input[type=text] {
+	margin-left: 25px;
+}

@@ -1,0 +1,65 @@
+/*  HEADINGS STYLES ========================================================================== */
+h1 {
+	font-weight: 700;
+	font-size: 32px;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1.2;
+	color: #252e43;
+	margin-bottom: 20px;
+	font-family: 'proxima-nova-condensed', sans-serif;
+	position: relative;
+	padding-bottom: 40px;
+
+	@media only screen and (min-width: 720px) {
+		font-size: 46px;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100px;
+		border-bottom: 4px solid #214ba7;
+		bottom:0;
+		left:50%;
+		margin-left: -50px;
+	}
+
+}
+h2,
+h2 > a {
+	color: #252e43;
+  font-weight: 600;
+  font-family: 'proxima-nova-condensed', sans-serif;
+  font-size: 24px;
+  position: relative;
+  margin-bottom: 10px;
+  display: block;
+	line-height: 1.4;
+
+	@media only screen and (min-width: 720px) {
+		font-size: 30px;
+	}
+}
+h3 {
+	color: #214ba7;
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: 700;
+
+	@media only screen and (min-width: 720px) {
+		font-size: 18px;
+	}
+
+}
+h4 {
+	color: #333;
+	font-size: 22px;
+	margin-bottom: 30px;
+	font-weight: 700;
+
+	@media only screen and (min-width: 720px) {
+		font-size: 28px;
+	}
+
+}
